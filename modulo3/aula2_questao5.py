@@ -1,0 +1,6 @@
+genero = input("Digite seu gênero: ")
+idade = int(input("Digite sua idade: "))
+tempoServico = int(input("Digite seu tempo de serviço em anos: "))
+teste1 = genero == "M" and (idade > 65 or tempoServico > 30 or (idade >= 60 and tempoServico >= 25) )
+teste2 = genero == "F" and (idade > 60 or tempoServico > 30 or (idade >= 60 and tempoServico >= 25) )
+print(teste1 or teste2)
